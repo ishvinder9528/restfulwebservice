@@ -1,4 +1,4 @@
-package com.ishu.rest.webservice.restfulwebservice;
+package com.ishu.rest.webservice.restfulwebservice.HelloWorld;
 
 public class HelloWorldBean {
 
