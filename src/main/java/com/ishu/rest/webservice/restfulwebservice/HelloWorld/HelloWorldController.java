@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
     // @RequestMapping(method = RequestMethod.GET, path = "/hello-World")
-    @GetMapping(path = "/hello-World")
+    @GetMapping(path = "/hello-world")
     public String helloWorld() {
         return "Hello World!";
     }
 
-    @GetMapping(path = "/hello-World-Bean")
+    @GetMapping(path = "/hello-world-Bean")
     public HelloWorldBean helloWorldBean() {
         throw new RuntimeException("Some Error Occurred! contact Support ASAP!");
         // return new HelloWorldBean("Hello World! - changed"); //
     }
 
-    @GetMapping(path = "/hello-World-pathVariable/{name}")
+    @GetMapping(path = "/hello-World/path-variable/{name}")
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
         return new HelloWorldBean(String.format("Hello World!, %s", name));
     }
